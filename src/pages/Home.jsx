@@ -80,13 +80,15 @@ setimage(value)
 
   return (
 <div id='homebody' className="row w-100" >
+<h1 className='blogname'>Aur batao..</h1>
+      <h6 className='tagline'>Your digital diary</h6>
   <div id='sidebar' className='col-2 d-flex justify-content-center'>
 <Sidebar setclicked={setclicked} clicked={clicked} />
   </div>
   <div className='col-10 '> 
   <div className='row d-flex justify-content-center gap-4'>
   {userpost?.map((ele)=>{
-    return <div  className="card" style={{width: '18rem'}}>
+    return <div id='card' className="card" style={{width: '18rem'}}>
     <img height={"200px"} src={ele?.image} className="card-img-top" alt="..." />
     <div id='cardbox' className="card-body">
       <h5 className="card-title">Title:{ele?.title}</h5>
